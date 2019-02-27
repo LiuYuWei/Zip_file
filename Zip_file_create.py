@@ -1,11 +1,4 @@
-
 # coding: utf-8
-
-# ## Zip the file
-
-# In[1]:
-
-
 import os
 import sys
 import zipfile
@@ -21,10 +14,6 @@ def zip_file(startdir):
             z.write(os.path.join(dirpath, filename),fpath+filename)
     print ('成功')
     z.close()
-
-
-# In[ ]:
-
 
 if __name__ == '__main__':
     startdir = sys.argv[1]
